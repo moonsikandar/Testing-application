@@ -1,3 +1,42 @@
 .App {
   text-align: center;
 }
+.my-navbar a{
+  text-decoration: none;
+  margin: 0 15px;
+  color: red;
+  font-size: 20px;
+
+}
+.my-navbar a:last-child{
+  color: green;
+}
+.fetching{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.fetching h4{
+  text-align: start;
+  margin-left: 15px;
+}
+.fetching ul  {
+  display: flex;
+  gap: 10px;
+  color: green;
+  padding: 0 !important;
+
+}.fetching ul li{
+  list-style: none;
+ 
+}
+.fetching ul li a{
+  padding: 5px;
+  border-radius: 5px;
+}
+.fetching-insider ul li a:hover{
+  cursor: pointer;
+  background-color: green;
+  color: white;
+   
+}
