@@ -8,6 +8,14 @@
   font-size: 20px;
 
 }
+.my-navbar a button{
+  background-color: green;
+  font-size: 18px;
+  border: 0;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 7px;
+}
 .my-navbar a:last-child{
   color: green;
 }
@@ -39,4 +47,18 @@
   background-color: green;
   color: white;
    
+}
+.Modal-Dialog{
+  max-width: 30% !important;
+  background-color: aliceblue;
+  
+}
+.Modal-Dialog .modal-content{
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+}
+.qna{
+  max-width: 50%;
+  margin: 0 auto;
 }

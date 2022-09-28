@@ -11,11 +11,11 @@ const About = () => {
   const itemsPerPage = 5;
   //-----------searching-------------
   const [query, setQuery] = useState("");
-  const [filterWords, setFilterWords] = useState();
+  
 
   useEffect(() => {
     setTimeout(() => {
-      fetch("https://jsonplaceholder.typicode.com/posts")
+      fetch("https://fakestoreapi.com/products")
         .then((response) => {
           if (!response.ok) {
             throw new Error("please check your url properly");
@@ -24,7 +24,7 @@ const About = () => {
           }
         })
         .then((data) => setTitle(data))
-
+        
         .finally(() => {
           setLoading(false);
         });
@@ -45,9 +45,9 @@ const About = () => {
   let filterItems = [...currentItems];
   if (query.length > 0) {
     filterItems = [...tit];
-    console.log("yeeee", filterItems);
+    // console.log("yeeee", filterItems);
     filterItems = filterItems.filter((e) => {
-      return e.title.toLowerCase().includes(query) || e.id == query;
+      return e.title.toLowerCase().includes(query) || e.id === query;
     });
   }
   return (

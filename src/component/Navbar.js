@@ -18,7 +18,8 @@ const Navbar = () => {
         <Link to="/">Home </Link>
         <Link to="about"> About </Link>
         <Link to="contact">Contact </Link>
-        <Link to="login" onClick={checklogin}>{login?"Logout":"login"}</Link>
+        <Link to="login"><button  onClick={checklogin}>{login?"Logout":"login"}</button></Link>
+        <hr></hr>
       </div>
       <Routes>
           <Route path="/" element={<Home />} />
@@ -26,6 +27,7 @@ const Navbar = () => {
           <Route path="contact" element={<Contact />} />
           {!!login ?<Route path="login" element={<Login/>}/> : <Route path="login" element={<Logout/>}/>}
         </Routes>
+        
     </div>
   );
 };
